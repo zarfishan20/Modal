@@ -4,13 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
+    <title>Custom Modal</title>
+
+    <style>
+        html body{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        html{
+            
+            background-image: url("background.jpg");
+            background-size: cover;
+            font-size: 30px;
+            background-position: center center;
+        }
+
+        .button{
+
+            font-size: 15px;
+            text-align: center;
+            line-height: 44px;
+            background-color: brown;
+            color: white;
+            border-radius: 8px;
+            padding: 5px 25px 5px 25px;
+            outline: 0 !important;
+            box-shadow: 0 4px 0 rgb(211, 139, 139), 
+            0 5px 5px 1px rgba(0, 0, 0, 0.4);
+            top:50%;
+            left: 50%;
+            z-index: -1px;
+            /*transform: translate(-50%,-50%);*/
+
+        }
+
+        .button:hover{
+            border:2px solid blue;
+        }
+
+
+    </style>
+
+
 </head>
 <body>
     
+    <button type="button" class="button">
+        OPEN MODAL
+    </button>
+
+<script>
 
 
+</script>
 
-    
 </body>
 </html>
