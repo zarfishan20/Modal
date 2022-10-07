@@ -22,27 +22,50 @@
         }
 
         .button{
+  
+  background-color: #cc4331;
+  font-size:22px;
+  line-height:42px;
+  color:white;
+  outline:0 !important;
+  margin-top: -4px;
+  text-align:center;
+  box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px black;
+  border-radius:10px;
+padding: 5px 25px 5px 25px;
+  transition: all 0.15s ease-in-out;
 
-            font-size: 15px;
-            text-align: center;
-            line-height: 44px;
-            background-color: brown;
-            color: white;
-            border-radius: 8px;
-            padding: 5px 25px 5px 25px;
-            outline: 0 !important;
-            box-shadow: 0 4px 0 rgb(211, 139, 139), 
-            0 5px 5px 1px rgba(0, 0, 0, 0.4);
-            top:50%;
-            left: 50%;
-            z-index: -1px;
-            /*transform: translate(-50%,-50%);*/
+}
 
-        }
+.button:hover{
 
-        .button:hover{
-            border:2px solid blue;
-        }
+background-color: #d25544;
+  box-shadow: 0 4px 0 #c4402f, 0 5px 5px 1px black;
+  
+}
+
+.button:active{
+     margin-top:0;
+     box-shadow:none;
+
+}
+
+.center{
+position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  
+}
+#modal-background{
+
+background-color: rgba(0,0,0,0.45);
+  position:fixed;
+  width:100%;
+  height:100%;
+  
+
+}
 
 
     </style>
@@ -51,9 +74,10 @@
 </head>
 <body>
     
-    <button type="button" class="button">
-        OPEN MODAL
-    </button>
+    <button type="button" class="button center"> Open Modal </button>
+
+    <div id = "modal-background"></div>
+    <div id = "modal-box"></div>
 
 <script>
 
