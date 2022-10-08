@@ -5,99 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Modal</title>
-
-
-
-
-    <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
-
-        html body{
-            padding: 0;
-            margin: 0;
-            height: 100%;
-        }
-
-        html{
-            
-            background-image: url("background.jpg");
-            background-size: cover;
-            font-size: 30px;
-            background-position: center center;
-        }
-
-.button{
-  
-    background-color: #cc4331;
-    font-size:22px;
-    line-height:42px;
-    color:white;
-    outline:0 !important;
-    margin-top: -4px;
-    text-align:center;
-    box-shadow: 0 4px 0 #b46960, 0 5px 5px 1px rgb(70, 69, 69);
-    border-radius:4px;
-    padding: 5px 25px 5px 25px;
-    transition: all 0.15s ease-in-out;
-
-}
-
-.button:hover{
-
-background-color: #d25544;
-  box-shadow: 0 4px 0 #c4402f, 0 5px 5px 1px black;
-  
-}
-
-.button:active{
-     margin-top:0;
-     box-shadow:none;
-
-}
-
-.center{
-position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  
-}
-h1, p{
-
-    font-family: 'Indie Flower', cursive;
-}
-#modal-background{
-
-    background-color: rgba(0,0,0,0.45);
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-  
-
-}
-#modal-box{
-
-    background-color: white;
-    position: fixed;
-    top:50%;
-    left:50%;
-    padding: 25px;
-    min-width: 600px;
-    max-width: 800px;
-    z-index: 11;
-    transform: translate(-50%,-50%);
-}
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     
-    <button type="button" class="button center"> Open Modal </button>
+    <button type="button" class="button center js-open"> Open Modal </button>
 
     <div id = "modal-background"></div>
     <div id = "modal-box">
@@ -107,15 +20,18 @@ h1, p{
              Accusantium enim nihil fugit ullam facere? Sit, quidem velit
               nam distinctio vitae a nemo. 
             Reprehenderit nemo deserunt quae possimus cupiditate optio labore?</p>
-            <button type="button" class="button"> close</button>
-            <button type="button" class="button"> accept</button>
+            <div class="text-right">
+                    <button type="button" class="button button--close js-close">
+                         Close
+                    </button>
+                    <button type="button" class="button js-close"> 
+                        Accept
+                    </button>
+
+            </div>
 
     </div>
-
-<script>
-
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
